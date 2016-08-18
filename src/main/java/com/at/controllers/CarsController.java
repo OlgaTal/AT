@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.data.domain.PageRequest;
 import com.at.models.Car;
 
+import java.util.List;
+
 @RestController
 @CrossOrigin
 @RequestMapping({"/cars"})
@@ -35,6 +37,12 @@ public class CarsController {
     @RequestMapping(path = {"/all"}, method = RequestMethod.GET)
     public Iterable<Car> index(){
         return repo.findAll();
+    }
+
+
+    @RequestMapping(path = "/byperson/{id}", method = RequestMethod.GET)
+    public List<Car> show(@PathVariable int id){
+        return repo.findByPersonId(id);
     }
 
 }
