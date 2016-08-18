@@ -19,6 +19,7 @@ public class Claim {
     }
 
 
+
     @Id
     @GeneratedValue
     public int getId() {

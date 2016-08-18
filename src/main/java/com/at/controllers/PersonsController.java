@@ -23,12 +23,16 @@ public class PersonsController {
         this.repo = repo;
     }
 
+    @RequestMapping(path = {"/all"}, method = RequestMethod.GET)
+    public Iterable<Person> index(){
+        return repo.findAll();
+    }
+
     @RequestMapping(path = {"", "/"}, method = RequestMethod.GET)
     public Iterable<Person> index(@RequestParam(name = "page", required = false, defaultValue = "0") int page){
         PageRequest pr = new PageRequest(page, 3);
         return repo.findAll(pr);
     }
-
 
     @RequestMapping(path = {"", "/"}, method = RequestMethod.POST)
     public Person create(@RequestBody Person person){

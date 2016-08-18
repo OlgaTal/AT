@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.at.controllers.ClaimsControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.at.controllers.ClaimsControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.at.controllers.html">com.at.controllers</a> &gt; ClaimsControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.080s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">shouldCreateAClaim</td>
+<td>0.080s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2016-08-18 15:29:43.912  INFO 17359 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.at.controllers.ClaimsControllerTest], using SpringBootContextLoader
+2016-08-18 15:29:43.913  INFO 17359 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.at.controllers.ClaimsControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2016-08-18 15:29:43.913  INFO 17359 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.at.controllers.ClaimsControllerTest]: ClaimsControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2016-08-18 15:29:43.916  INFO 17359 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.at.AtApplication for test class com.at.controllers.ClaimsControllerTest
+2016-08-18 15:29:43.919  INFO 17359 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2016-08-18 15:29:43.919  INFO 17359 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2759f4ba, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@29736d00, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener@2ec79476, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2670c496, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4e6418c6, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7c4d7767, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6e3b28bc, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4ecf1599, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@208396ae, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@37e23b96, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@ab8b1e]
+2016-08-18 15:29:43.922  INFO 17359 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [clean-database.sql]
+2016-08-18 15:29:43.964  INFO 17359 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [clean-database.sql] in 42 ms.
+pId*********************************: 0
+Hibernate: insert into claims (car_id, claim_date, claim_time, location, photo) values (?, ?, ?, ?, ?)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.13</a> at Aug 18, 2016 3:29:44 PM</p>
+</div>
+</div>
+</body>
+</html>

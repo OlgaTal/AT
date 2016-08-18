@@ -32,4 +32,9 @@ public class CarsController {
         return repo.save(car);
     }
 
+    @RequestMapping(path = {"/all"}, method = RequestMethod.GET)
+    public Iterable<Car> index(){
+        return repo.findAll();
+    }
+
 }
